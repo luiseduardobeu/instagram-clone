@@ -1,0 +1,289 @@
+*
+{
+  font-family: sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+
+body
+{
+  background: #fafafa;
+  color: #262626;
+}
+
+div, main, section, article
+{
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+}
+
+
+section
+{
+  min-height: 100vh;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+main
+{
+  flex-grow: 1;
+  order: 4;
+}
+
+article
+{
+  justify-content: center;
+  flex-direction: row;
+  margin: 32px auto 0;
+  padding: 0 0 32px 0;
+  max-width: 935px;
+  flex-grow: 1;
+  width: 100%;
+}
+
+div.phone-img
+{
+  background-size: 468.32px 634.15px;
+  background: url(./img/phone.png);
+  background-position: -46px 0;
+  margin: 0 32px 12px 0;
+  flex-basis: 380.32px;
+  align-self: center;
+  height: 581.15px;
+}
+
+div.background-img
+{
+  margin: 27px 0 0 113px;
+}
+
+div.background-img > img
+{
+  height: 538.84px;
+  width: 250px;
+}
+
+div.user-login
+{
+  justify-content: center;
+  margin: 12px 0 0 0;
+  max-width: 350px;
+  color: #262626;
+  flex-grow: 1;
+}
+
+div.login, div.without-account
+{
+  border: 1px solid #dbdbdb;
+  align-items: center;
+  background: #fff;
+  border-radius: 1px;
+  margin: 0 0 10px;
+  padding: 10px 0;
+}
+
+div.logo-img
+{
+  justify-content: center;
+  align-content: stretch;
+  margin: 36px 0 12px 0;
+  flex: 0 0 auto;
+}
+
+div.form
+{
+  margin: 0 0 10px 0;
+  text-align: center;
+  max-width: 350px;
+  width: 100%;
+}
+
+div.form-login
+{
+  justify-content: flex-start;
+  align-content: stretch;
+  margin: 24px 0 0 0;
+  flex: 0 0 auto;
+}
+
+div.username, div.password
+{
+  margin: 0 40px 6px;
+}
+
+input
+{
+  border: 1px solid #dbdbdb;
+  padding: 9px 0 7px 8px;
+  background: #fafafa;
+  border-radius: 3px;
+  text-overflow: ellipsis;
+  outline: 0;
+}
+
+div.button-login
+{
+  justify-content: flex-start;
+  align-content: stretch;
+  margin: 8px 40px;
+  flex: 0 0 auto;
+}
+
+button.login
+{
+  border: 1px solid transparent;
+  background: #0095f6;
+  pointer-events: none;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 18px;
+  user-select: none;
+  appearance: none;
+  font-weight: 600;
+  padding: 5px 9px;
+  cursor: pointer;
+  color: #fff;
+  width: auto;
+  opacity: 1;
+}
+
+div.separator
+{
+  margin: 10px 40px 18px;
+  flex-direction: row;
+}
+
+div.separator-left, div.separator-right
+{
+  background: #dbdbdb;
+  flex-shrink: 1;
+  flex-grow: 1;
+  height: 1px;
+  top: .45rem;
+}
+
+div.separator-center
+{
+  text-transform: uppercase;
+  line-height: 15px;
+  color: #8e8e8e;
+  font-weight: 600;
+  font-size: 13px;
+  margin: 0 18px;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+div.log-with-facebook
+{
+  justify-content: flex-start;
+  align-content: stretch;
+  margin: 8px 40px;
+  flex: 0 0 auto;
+}
+
+button.log-with-facebook
+{
+  display: inline-block;
+  background: 0 0;
+  border: 0;
+}
+
+span.log-with-facebook
+{
+  vertical-align: baseline;
+  text-transform: inherit;
+  text-align: center;
+  font-weight: 600;
+  color: #385185;
+  cursor: pointer;
+}
+
+a.forgot-password
+{
+  margin: 12px 0 0 0;
+  text-align: center;
+  line-height: 16px;
+  color: #00376b;
+  font-size: 12px;
+}
+
+div.create-account
+{
+  margin: -3px 0 -4px;
+  line-height: 18px;
+  font-weight: 400;
+  display: block;
+}
+
+p.create-account
+{
+  margin: 15px;
+}
+
+a.create-account
+{
+  color: #0095f6;
+  font-weight: 600;
+}
+
+p.get-app
+{
+  text-align: center;
+  margin: 10px 20px;
+}
+
+div.downloads
+{
+  justify-content: center;
+  flex-direction: row;
+  margin: 10px 0;
+}
+
+a.downloads
+{
+  margin: 0 4px;
+}
+
+a.downloads > img
+{
+  height: 40px;
+}
+
+@media (max-width: 875px) {
+
+  div.phone-img
+  {
+    flex-basis: 0;
+  }
+
+  div.background-img
+  {
+    margin: 0;
+  }
+
+  div.background-img > img
+  {
+    height: 0;
+    width: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  div.login, div.without-account
+  {
+    align-items: center;
+    margin: 0 0 25px;
+    border-radius: 0;
+    padding: 25px 0;
+    background: 0;
+    border: 0;
+  }
+}
